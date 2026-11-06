@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Kalorien – App-Informationen</title>
+  <link rel="icon" type="image/png" href="./icon.png">
+  <style>
+    :root { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #f0f6fc; background: #0d1117; }
+    * { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.7; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { background: #161b22; border-bottom: 1px solid #30363d; padding: 18px 24px; }
+    nav, main { max-width: 900px; margin: auto; }
+    nav { display: flex; gap: 22px; flex-wrap: wrap; align-items: center; }
+    nav a:first-child { color: #f0f6fc; font-weight: 700; margin-right: auto; }
+    main { padding: 56px 24px 90px; }
+    .hero { display: flex; align-items: center; gap: 24px; margin-bottom: 24px; flex-wrap: wrap; }
+    .hero-icon { width: 80px; height: 80px; border-radius: 18px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+    .hero-text h1 { font-size: clamp(32px, 6vw, 44px); margin: 0 0 4px; }
+    .tag { display: inline-block; border: 1px solid #238636; color: #3fb950; border-radius: 20px; padding: 2px 10px; font-size: 13px; margin-bottom: 8px; }
+    .muted { color: #8b949e; }
+    .lead { font-size: 18px; color: #c9d1d9; margin-bottom: 32px; }
+    .feature-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 16px; margin: 32px 0 44px; }
+    .feature-item { background: #161b22; border: 1px solid #30363d; border-radius: 10px; padding: 20px; }
+    .feature-item h3 { margin: 0 0 8px; font-size: 18px; color: #f0f6fc; }
+    .feature-item p { margin: 0; color: #8b949e; font-size: 15px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 18px; margin-top: 24px; }
+    .card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 24px; }
+    .card h2 { margin-top: 0; font-size: 20px; }
+    footer { border-top: 1px solid #30363d; padding: 24px; text-align: center; color: #8b949e; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Hauptnavigation">
+      <a href="../index.html">Meine Apps</a>
+      <a href="./index.html">Kalorien</a>
+      <a href="privacy.html">Datenschutz</a>
+      <a href="terms.html">Nutzungsbedingungen</a>
+    </nav>
+  </header>
+  <main>
+    <span class="tag">App-Informationen</span>
+    <div class="hero">
+      <img class="hero-icon" src="./icon.png" alt="Kalorien App Icon">
+      <div class="hero-text">
+        <h1>Kalorien</h1>
+        <p class="muted">Kalorien, Makronährstoffe und Ernährung übersichtlich verwalten.</p>
+      </div>
+    </div>
+    
+    <p class="lead">Kalorien ist eine moderne, datenschutzfreundliche Anwendung zur Erfassung und Auswertung deiner täglichen Ernährungs- und Fitnessdaten.</p>
+
+    <div class="feature-list">
+      <div class="feature-item">
+        <h3>🥗 Ernährungstagebuch</h3>
+        <p>Erfasse Mahlzeiten und behalte Kalorien sowie Makronährstoffe (Kohlenhydrate, Eiweiß, Fett) übersichtlich im Blick.</p>
+      </div>
+      <div class="feature-item">
+        <h3>🎯 Individuelle Ziele & BMR</h3>
+        <p>Berechne deinen Grundumsatz und Tagesbedarf passend zu deinen persönlichen Zielen wie Gewichtsverlust oder Muskelaufbau.</p>
+      </div>
+      <div class="feature-item">
+        <h3>🔒 Lokale Speicherung & Privatsphäre</h3>
+        <p>Deine Daten gehören dir. Alle Einträge werden standardmäßig lokal auf deinem Gerät gespeichert – ganz ohne Tracking.</p>
+      </div>
+      <div class="feature-item">
+        <h3>☁️ Optionale Google Drive-Synchronisation</h3>
+        <p>Sichere und synchronisiere deine Daten auf Wunsch nahtlos über dein persönliches Google Drive mittels modernem OAuth 2.0 (PKCE).</p>
+      </div>
+    </div>
+
+    <h2>Rechtliche Informationen</h2>
+    <section class="cards" aria-label="Rechtliche Informationen">
+      <article class="card">
+        <h2>Datenschutzerklärung</h2>
+        <p class="muted">Detaillierte Informationen zur lokalen Speicherung und optionalen Google Drive-Anbindung.</p>
+        <a href="privacy.html">Datenschutzerklärung ansehen →</a>
+      </article>
+      <article class="card">
+        <h2>Nutzungsbedingungen</h2>
+        <p class="muted">Bedingungen für die Nutzung der Anwendung und wichtige gesundheitliche Hinweise.</p>
+        <a href="terms.html">Nutzungsbedingungen ansehen →</a>
+      </article>
+    </section>
+  </main>
+  <footer>Kalorien · <a href="../index.html">Alle Apps</a></footer>
+</body>
+</html>

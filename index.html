@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Meine Apps</title>
+  <link rel="icon" type="image/png" href="./icon.png">
+  <style>
+    :root {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #f0f6fc;
+      background: #0d1117;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.6; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header {
+      padding: 18px max(24px, calc((100% - 960px)/2));
+      background: #161b22;
+      border-bottom: 1px solid #30363d;
+      font-weight: 650;
+    }
+    main { max-width: 960px; margin: 70px auto; padding: 0 24px; }
+    h1 { font-size: clamp(28px, 5vw, 40px); margin-bottom: 8px; }
+    .muted { color: #8b949e; }
+    .apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 18px; margin-top: 36px; }
+    .card { border: 1px solid #30363d; border-radius: 12px; padding: 24px; background: #161b22; display: flex; flex-direction: column; }
+    .card-header { display: flex; align-items: center; gap: 16px; margin-bottom: 12px; }
+    .app-icon { width: 48px; height: 48px; border-radius: 10px; flex-shrink: 0; }
+    .card h2 { margin: 0; font-size: 22px; }
+    .card p { color: #8b949e; flex-grow: 1; margin: 0 0 18px; }
+    .button { display: inline-block; background: #238636; color: white; border-radius: 6px; padding: 9px 16px; font-weight: 600; text-align: center; width: fit-content; }
+    .button:hover { background: #2ea043; text-decoration: none; }
+    footer { border-top: 1px solid #30363d; color: #8b949e; padding: 24px; text-align: center; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <header>Meine Apps</header>
+  <main>
+    <h1>Meine Anwendungen</h1>
+    <p class="muted">Informationen, Datenschutz und Nutzungsbedingungen meiner Softwareprojekte.</p>
+    <section class="apps">
+      <article class="card">
+        <div class="card-header">
+          <img class="app-icon" src="./kalorien/icon.png" alt="Kalorien App Icon">
+          <h2>Kalorien</h2>
+        </div>
+        <p>Eine übersichtliche Anwendung zur persönlichen Verwaltung und Auswertung von Kalorien-, Nährwert- und Ernährungsdaten mit optionaler Google Drive-Synchronisation.</p>
+        <a class="button" href="./kalorien/index.html">Mehr erfahren</a>
+      </article>
+    </section>
+  </main>
+  <footer>Meine Apps · Informationen zu meinen Softwareprojekten</footer>
+</body>
+</html>

@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Datenschutz – Kalorien</title>
+  <link rel="icon" type="image/png" href="./icon.png">
+  <style>
+    :root { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #f0f6fc; background: #0d1117; }
+    * { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.75; }
+    header { padding: 18px 24px; background: #161b22; border-bottom: 1px solid #30363d; }
+    nav, main { max-width: 850px; margin: auto; }
+    nav { display: flex; gap: 22px; flex-wrap: wrap; }
+    main { padding: 52px 24px 90px; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1 { font-size: clamp(28px, 5vw, 38px); margin-bottom: 8px; }
+    h2 { margin-top: 38px; padding-bottom: 8px; border-bottom: 1px solid #30363d; font-size: 21px; }
+    h3 { margin-top: 24px; font-size: 17px; color: #f0f6fc; }
+    p, li { color: #c9d1d9; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .notice { background: #161b22; border: 1px solid #30363d; border-left: 3px solid #58a6ff; padding: 14px 18px; border-radius: 6px; margin: 20px 0; }
+    footer { border-top: 1px solid #30363d; padding: 24px; text-align: center; color: #8b949e; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Navigation">
+      <a href="./index.html">← Kalorien</a>
+      <a href="terms.html">Nutzungsbedingungen</a>
+      <a href="../index.html">Alle Apps</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Datenschutzerklärung</h1>
+    <p>Informationen zur Datenverarbeitung in der Anwendung <strong>Kalorien</strong>.</p>
+    <p class="notice">Stand: November 2026</p>
+
+    <h2>1. Grundsatz und Verantwortlichkeit</h2>
+    <p>Der Schutz deiner persönlichen Daten hat bei der Nutzung der App „Kalorien“ höchste Priorität. Die Anwendung ist nach dem Grundsatz der Datensparsamkeit und Privacy-by-Design konzipiert:</p>
+    <ul>
+      <li>Alle Daten verbleiben standardmäßig ausschließlich lokal auf deinem Endgerät.</li>
+      <li>Es gibt keine Registrierungspflicht und keine Entwickler-Server, auf denen deine Daten gespeichert oder ausgewertet werden.</li>
+      <li>Es findet kein Tracking, keine Profilbildung zu Werbezwecken und kein Verkauf deiner Daten statt.</li>
+    </ul>
+    <p>Verantwortlich für die App ist der jeweilige Herausgeber/Entwickler des Softwareprojekts. Bei Fragen zum Datenschutz erreichst du uns über das Projekt-Repository bzw. die angegebenen Support-Möglichkeiten.</p>
+
+    <h2>2. Welche Daten werden verarbeitet?</h2>
+    <p>Die Anwendung verarbeitet ausschließlich Daten, die du selbst eingibst oder die zur Bereitstellung der Kernfunktionen erforderlich sind:</p>
+    <ul>
+      <li><strong>Körper- und Profildaten:</strong> Angaben wie Körpergröße, aktuelles Gewicht, Zielgewicht und Aktivitätsniveau zur lokalen Berechnung von Grundumsatz (BMR) und Nährstoffzielen.</li>
+      <li><strong>Ernährungsdaten:</strong> Von dir erfasste Lebensmittel, Rezepte, Mahlzeiten, Portionsgrößen sowie Nährwerte (Kalorien, Kohlenhydrate, Fette, Eiweiß, Ballaststoffe etc.).</li>
+      <li><strong>Authentifizierungs-Token (bei Cloud-Nutzung):</strong> Bei aktivierter Google Drive-Synchronisation werden OAuth-Zugriffstokens im geschützten lokalen Speicherbereich der App auf deinem Gerät abgelegt.</li>
+    </ul>
+
+    <h2>3. Lokale Datenspeicherung und Löschung</h2>
+    <p>Deine Ernährungs- und Profildaten werden in lokalen Anwendungsdateien auf deinem Gerät gespeichert.</p>
+    <ul>
+      <li>Du kannst jeden Eintrag, jedes Lebensmittel und dein Profil jederzeit direkt in der App bearbeiten oder löschen.</li>
+      <li>Durch das Löschen der App-Daten in den Systemeinstellungen oder durch die Deinstallation der Anwendung werden alle lokalen Daten restlos von deinem Endgerät entfernt.</li>
+    </ul>
+
+    <h2>4. Optionale Google Drive-Synchronisierung</h2>
+    <p>Die Anwendung bietet eine optionale Synchronisierungsfunktion über Google Drive, um deine Daten zwischen verschiedenen Geräten abzugleichen oder Sicherungskopien zu erstellen. Diese Funktion ist standardmäßig deaktiviert.</p>
+    
+    <h3>a) OAuth 2.0 Authentifizierung & Berechtigungen</h3>
+    <p>Die Verbindung zu deinem Google-Konto erfolgt über das standardisierte, sichere OAuth 2.0 PKCE-Verfahren. Die App fordert dabei nur die minimal notwendigen Berechtigungen (Scopes) an:</p>
+    <ul>
+      <li><code>drive.appdata</code> / <code>drive.file</code>: Die App greift ausschließlich auf ihren eigenen, geschützten Anwendungsordner (Application Data Folder) bzw. auf Dateien zu, die von der App selbst in deinem Google Drive erstellt wurden. Die App hat <strong>keinen Zugriff</strong> auf andere private Dateien, Fotos oder Dokumente in deinem Google Drive.</li>
+      <li><code>userinfo.profile</code> & <code>userinfo.email</code>: Dient ausschließlich der Anzeige deines Kontonamens in den Einstellungen der App, damit du siehst, mit welchem Konto die App verknüpft ist.</li>
+    </ul>
+
+    <h3>b) Datenübertragung und Google API User Data Policy</h3>
+    <p>Die Synchronisationsdaten werden direkt über verschlüsselte HTTPS-Verbindungen zwischen deinem Endgerät und den Google-Servern ausgetauscht. Zu keinem Zeitpunkt werden Daten über Server der App-Entwickler geleitet.</p>
+    <p>Die Nutzung und Übertragung von Informationen, die über Google APIs empfangen werden, an andere Apps erfolgt in Übereinstimmung mit der <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>, einschließlich der Anforderungen an die eingeschränkte Nutzung (Limited Use).</p>
+
+    <h3>c) Trennen der Verbindung und Widerruf</h3>
+    <p>Du kannst die Synchronisation jederzeit in den Einstellungen der App trennen. Zudem kannst du die Zugriffsberechtigung der App jederzeit zentral über die Sicherheitseinstellungen deines Google-Kontos unter <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Google Drittanbieter-Apps mit Kontozugriff</a> widerrufen.</p>
+
+    <h2>5. Weitergabe von Daten an Dritte</h2>
+    <p>Es erfolgt keine Weitergabe deiner persönlichen Daten an Dritte. Bei Nutzung der optionalen Google Drive-Synchronisation erfolgt die Speicherung auf der Infrastruktur von Google gemäß der <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Datenschutzerklärung von Google</a>.</p>
+
+    <h2>6. Deine Rechte</h2>
+    <p>Nach den geltenden Datenschutzbestimmungen (insbesondere der DSGVO) stehen dir bezüglich deiner personenbezogenen Daten folgende Rechte zu:</p>
+    <ul>
+      <li>Recht auf Auskunft über deine verarbeiteten Daten</li>
+      <li>Recht auf Berichtigung oder Löschung deiner Daten</li>
+      <li>Recht auf Einschränkung der Verarbeitung sowie Datenübertragbarkeit</li>
+      <li>Recht auf Widerruf erteilter Einwilligungen (z. B. OAuth-Verknüpfung) mit Wirkung für die Zukunft</li>
+    </ul>
+    <p>Da deine Daten lokal bzw. in deinem eigenen Cloud-Speicher liegen, kannst du diese Rechte jederzeit unmittelbar selbst über die App bzw. dein Google-Konto ausüben.</p>
+
+    <h2>7. Änderungen dieser Erklärung</h2>
+    <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, falls neue Funktionen in die App integriert werden oder sich rechtliche Rahmenbedingungen ändern. Die jeweils aktuelle Fassung ist stets über die App und diese Webseite abrufbar.</p>
+  </main>
+  <footer><a href="./index.html">Kalorien</a> · Datenschutzerklärung</footer>
+</body>
+</html>
